@@ -1,3 +1,4 @@
+//Setting up keyboard actions and messages
 const IP = "localhost";
 const PORT = 50541;
 const MOVE_UP_KEY = "w";

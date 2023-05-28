@@ -8,9 +8,10 @@ const {
 
 let connection;
 
+//Handle keyboard inputs from users
 const handleUserInput = function (key) {
   if (key === "\u0003") {
-    process.exit();
+    process.exit(); // Exit the program if the 'Ctrl + C' key combination is pressed
   }
 
   if (key === MOVE_UP_KEY) {
@@ -30,6 +31,7 @@ const handleUserInput = function (key) {
   }
 };
 
+//Setting up the Input
 const setupInput = function (conn) {
   connection = conn;
   const stdin = process.stdin;
